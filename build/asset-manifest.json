@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b7375371.css",
+    "main.js": "/static/js/main.b4a916fc.js",
+    "main.js.map": "/static/js/main.b4a916fc.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.e59f308b9509d2144a0006965262cc32.js": "/precache-manifest.e59f308b9509d2144a0006965262cc32.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.b7375371.css.map": "/static/css/main.b7375371.css.map",
+    "static/js/main.b4a916fc.js.LICENSE.txt": "/static/js/main.b4a916fc.js.LICENSE.txt",
+    "static/media/layout.scss": "/static/media/Bitmap.c565e21b.svg",
+    "static/media/MtvLogo.png": "/static/media/MtvLogo.b9383c1c.png"
+  },
+  "entrypoints": [
+    "static/css/main.b7375371.css",
+    "static/js/main.b4a916fc.js"
+  ]
+}

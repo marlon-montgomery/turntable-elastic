@@ -1,0 +1,47 @@
+{
+  "engineName": "turntable-search-engine",
+  "endpointBase": "https://dfffbe18444d4d5ea037b3a3225c94ec.ent-search.us-central1.gcp.cloud.es.io",
+  "searchKey": "search-f5uwnxwzyrstr75b6nb1ysjc",
+  "resultFields": [
+    "country",
+    "organization_url",
+    "role",
+    "regions",
+    "city",
+    "facebook",
+    "description",
+    "linkedin",
+    "type",
+    "crunchbase",
+    "twitter",
+    "deso",
+    "stage",
+    "organization",
+    "name",
+    "member",
+    "mediatech",
+    "location",
+    "state",
+    "interests",
+    "signal",
+    "investment_portfolio",
+    "deal_size",
+    "id"
+  ],
+  "sortFields": [
+    "location",
+    "type",
+    "organization"
+  ],
+  "facets": [
+    "location",
+    "type",
+    "organization",
+    "role",
+    "deal_size",
+    "stage",
+    "member"
+  ],
+  "titleField": "name",
+  "urlField": "mediatech"
+}

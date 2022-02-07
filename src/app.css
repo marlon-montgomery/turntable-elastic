@@ -1,0 +1,43 @@
+*{
+    font-family: Poppins !important;
+}
+.header {
+    display: flex;
+    flex-wrap: wrap;
+}
+.search-icon{
+    width: 20px;
+    height: 20px;
+}
+.form{
+  flex: 1;
+}
+
+
+.search-bar-wrapper {
+  background-color: white !important;
+  display: flex;
+  align-items: center;
+  width: 400px;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.5rem;
+ }
+ .search-bar-wrapper .form{
+    flex: 1;
+ }
+
+.search-input {
+  border: 0px;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  width: 100%;
+  font-size: 14px;
+  font-family: Poppins;
+  font-weight: 400;
+ }
+
+input:focus {
+  outline: none;
+}
+
+
