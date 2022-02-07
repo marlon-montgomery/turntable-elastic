@@ -1,7 +1,6 @@
 <p align="center"><img src="https://github.com/elastic/app-search-reference-ui-react/blob/master/logo-app-search.png?raw=true" alt="Elastic App Search Logo"></p>
 
-> A configurable, generic search UI for
-> any [Elastic App Search](https://www.elastic.co/products/app-search) Engine.
+Turntable Search UI built on ElasticSearch
 
 ## Contents
 
