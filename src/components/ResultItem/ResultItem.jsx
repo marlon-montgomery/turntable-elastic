@@ -21,7 +21,7 @@ export const ResultItems = ({ results }) => {
 export const ResultItem = ({ 
     name, type,description,role,
     facebook, twitter, linkedin, signal, crunchbase,
-    investment_portfolio, location, organization_url, mediatech, organization, interests, stage, deal_size
+    investment_portfolio, location, organization_url, mediatech, angel, organization, interests, stage, deal_size
  }) => {
     const availableInfoSections = [];
     // location 
@@ -97,6 +97,11 @@ export const ResultItem = ({
             link: crunchbase,
             icon: require("../../assets/images/crunchbase.png"),
         }
+        ,{
+            name:"angel",
+            link:angel,
+            icon:require("../../assets/images/angel.png")
+        }
     ];
     
     socialLinks = socialLinks.map(socialLink => {
@@ -129,7 +134,7 @@ export const ResultItem = ({
                     </div>
                     <div className="profile-details">
                     <div className="detail-section">
-                            <div className="detail-section-label">{type && 'Investory type:'}</div>
+                            <div className="detail-section-label">{type && 'type:'}</div>
                             <div className={`detail-section-value ${type || 'dim'}`}>
                                 {type}
                             </div>
