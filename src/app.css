@@ -1,6 +1,10 @@
 *{
     font-family: Poppins !important;
 }
+
+:root{
+  --btn-color:red;
+}
 .header {
     display: flex;
     flex-wrap: wrap;
