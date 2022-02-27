@@ -3,7 +3,7 @@ import "./resultItem.css";
 
 export const ResultItems = ({ results }) => {
     const parsedResults = results.map(result => {
-        const obj={};
+        const obj = {};
         Object.keys(result).map(key => {
             obj[key] = result[key].raw;
         });
@@ -11,50 +11,50 @@ export const ResultItems = ({ results }) => {
     });
     return parsedResults.map(result => {
 
-       return <ResultItem
-                key={result.id}
-                {...result}
-            />
-   })
+        return <ResultItem
+            key={result.id}
+            {...result}
+        />
+    })
 };
 
-export const ResultItem = ({ 
-    name, type,description,role,
+export const ResultItem = ({
+    name, type, description, role,
     facebook, twitter, linkedin, signal, crunchbase,
     investment_portfolio, location, organization_url, mediatech, angel, organization, interests, stage, deal_size
- }) => {
+}) => {
     const availableInfoSections = [];
     // location 
     // portfolio companies
     // segments, investory types
-    if(!!description) {
-       // do nothing.
+    if (!!description) {
+        // do nothing.
     }
-    if(!!location){
+    if (!!location) {
         availableInfoSections.push({
             title: "Location",
             content: location
         });
     }
-    if(!!interests){
+    if (!!interests) {
         availableInfoSections.push({
             title: "Interests",
             content: interests
         });
     }
-    if(!!stage){
+    if (!!stage) {
         availableInfoSections.push({
             title: "Stage",
             content: stage
         });
     }
-    if(!!deal_size){
+    if (!!deal_size) {
         availableInfoSections.push({
             title: "Deal Size",
             content: deal_size
         });
     }
-    if(!!investment_portfolio){
+    if (!!investment_portfolio) {
         availableInfoSections.push({
             title: "Portfolio Companies",
             content: investment_portfolio
@@ -65,7 +65,7 @@ export const ResultItem = ({
         window.open(link, '_blank');
     }
 
-    const availableData  = (investment_portfolio !== '' || location !== '' || interests !== '' || stage !== '' || deal_size !== '' );
+    const availableData = (investment_portfolio !== '' || location !== '' || interests !== '' || stage !== '' || deal_size !== '');
     let socialLinks = [
         {
             name: "mediatech",
@@ -87,7 +87,7 @@ export const ResultItem = ({
             link: linkedin,
             icon: require("../../assets/images/linkedin.png"),
         },
-        {   
+        {
             name: "Signal",
             link: signal,
             icon: require("../../assets/images/signal.png"),
@@ -97,13 +97,13 @@ export const ResultItem = ({
             link: crunchbase,
             icon: require("../../assets/images/crunchbase.png"),
         }
-        ,{
-            name:"angel",
-            link:angel,
-            icon:require("../../assets/images/angel.png")
+        , {
+            name: "angel",
+            link: angel,
+            icon: require("../../assets/images/angel.png")
         }
     ];
-    
+
     socialLinks = socialLinks.map(socialLink => {
         const link = socialLink.link;
         const isValid = link !== "" && link !== null && link !== undefined;
@@ -125,16 +125,19 @@ export const ResultItem = ({
     }
 
     return (
+
         <div className="profile-card-wrapper">
+
             <div className="profile-card">
-                    <div className="profile-card-main-section">
+
+                <div className="profile-card-main-section">
                     <div className="profile-title">
                         <div className="title">{name}</div>
                         <div className="type">{organization}</div>
                     </div>
                     <div className="profile-details">
-                    <div className="detail-section">
-                            <div className="detail-section-label">{type && 'type:'}</div>
+                        <div className="detail-section">
+                            <div className="detail-section-label">{type && 'Type:'}</div>
                             <div className={`detail-section-value ${type || 'dim'}`}>
                                 {type}
                             </div>
@@ -148,7 +151,7 @@ export const ResultItem = ({
                         {
                             !!description && (
                                 <div className="detail-section">
-                                    <div className="detail-section-label">{description && 'Bio:'}</div>
+                                    <div className="detail-section-label">{'Bio:'}</div>
                                     <div className="detail-section-value">{description}</div>
                                 </div>
                             )
@@ -159,12 +162,14 @@ export const ResultItem = ({
                             </div>
                             <div className="detail-section-value">
                                 <div className="detail-section-sub-values">
-                                    {
+                                    {availableInfoSections.content === null ? '' :
                                         availableInfoSections.map((item, index) => (
+
                                             <div
-                                                key={index} 
+                                                key={index}
                                                 className="detail-section-sub-value"
                                             >
+
                                                 {item.title}: {item.content}
                                             </div>
                                         ))
@@ -179,7 +184,7 @@ export const ResultItem = ({
                         <div className="profile-action social-links">
                             {
                                 socialLinks.map((socialLink, index) => (
-                                    <div key={index} className={`social-link ${!socialLink.isValid && 'dim'}`} onClick={ socialLink.isValid ? () => navigate(socialLink.link) : null}>
+                                    <div key={index} className={`social-link ${!socialLink.isValid && 'dim'}`} onClick={socialLink.isValid ? () => navigate(socialLink.link) : null}>
                                         <img src={socialLink.icon} alt={socialLink.name} />
                                     </div>
                                 ))
@@ -188,13 +193,13 @@ export const ResultItem = ({
                     </div>
                 </div>
             </div>
+
         </div>
+
     );
 };
 
 
-
-           
 
 
 // [
