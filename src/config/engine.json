@@ -1,5 +1,5 @@
 {
-  "engineName": "turntable-search-engine",
+  "engineName": "turntable-clean",
   "endpointBase": "https://dfffbe18444d4d5ea037b3a3225c94ec.ent-search.us-central1.gcp.cloud.es.io",
   "searchKey": "search-f5uwnxwzyrstr75b6nb1ysjc",
   "resultFields": [
