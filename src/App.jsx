@@ -93,6 +93,7 @@ export default function App() {
                         <img src={Logo} alt="logo" width="35" height="35" />
                         <SearchBox
                           autocompleteSuggestions={true}
+                          className="search-box-custome"
                           inputView={({ getAutocomplete, getInputProps }) => (
                             <div className="search-bar-wrapper">
                               <input
@@ -107,7 +108,7 @@ export default function App() {
                           )}
                         />
                       </div>
-                      <div><Button variant="contained" style={{ backgroundColor: "var(--btn-color)" }} onClick={handleOpen}>Create Profile</Button></div>
+                      <div className="create-btn"><Button variant="contained" style={{ backgroundColor: "var(--btn-color)" }} onClick={handleOpen}>Create Profile</Button></div>
 
                       <Modal
                         open={open}
@@ -132,7 +133,6 @@ export default function App() {
                           </Grid>
                         </Box>
                       </Modal>
-
                     </div>
                   }
                   sideContent={
