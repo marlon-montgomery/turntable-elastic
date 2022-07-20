@@ -6,6 +6,10 @@
   "dependencies": {
     "@elastic/react-search-ui": "1.7.0",
     "@elastic/search-ui-app-search-connector": "1.7.0",
+    "@emotion/react": "^11.8.1",
+    "@emotion/styled": "^11.8.1",
+    "@mui/material": "5.4.4",
+    "jsx-runtime": "^1.2.0",
     "prop-types": "^15.6.2",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",

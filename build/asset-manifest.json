@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.b7375371.css",
-    "main.js": "/static/js/main.b4a916fc.js",
-    "main.js.map": "/static/js/main.b4a916fc.js.map",
+    "main.css": "/static/css/main.7d8dd1a5.css",
+    "main.js": "/static/js/main.6cd1fa2f.js",
+    "main.js.map": "/static/js/main.6cd1fa2f.js.map",
     "index.html": "/index.html",
-    "precache-manifest.e59f308b9509d2144a0006965262cc32.js": "/precache-manifest.e59f308b9509d2144a0006965262cc32.js",
+    "precache-manifest.d91b4c122969e4b11bfa661fe7b2ffe8.js": "/precache-manifest.d91b4c122969e4b11bfa661fe7b2ffe8.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.b7375371.css.map": "/static/css/main.b7375371.css.map",
-    "static/js/main.b4a916fc.js.LICENSE.txt": "/static/js/main.b4a916fc.js.LICENSE.txt",
-    "static/media/layout.scss": "/static/media/Bitmap.c565e21b.svg",
-    "static/media/MtvLogo.png": "/static/media/MtvLogo.b9383c1c.png"
+    "static/css/main.7d8dd1a5.css.map": "/static/css/main.7d8dd1a5.css.map",
+    "static/js/main.6cd1fa2f.js.LICENSE.txt": "/static/js/main.6cd1fa2f.js.LICENSE.txt",
+    "static/media/layout.scss": "/static/media/Bitmap.f89f021e.svg",
+    "static/media/MtvLogo.png": "/static/media/MtvLogo.b9383c1c.png",
+    "static/media/organization.png": "/static/media/organization.0240c96f.png"
   },
   "entrypoints": [
-    "static/css/main.b7375371.css",
-    "static/js/main.b4a916fc.js"
+    "static/css/main.7d8dd1a5.css",
+    "static/js/main.6cd1fa2f.js"
   ]
 }
